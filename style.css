@@ -121,5 +121,32 @@ body {
     .team-member, .product-image img {
       width: 100%; /* Takes full width */
     }
+
+    /* Paragraph Styling */
+p {
+    font-size: 1.1em; /* Slightly larger text for readability */
+    line-height: 1.6; /* Adds more space between lines */
+    margin-bottom: 20px; /* Creates spacing between paragraphs */
+    color: #333; /* Maintains a dark gray text for contrast */
+    text-align: justify; /* Aligns text for a polished look */
+    padding: 0 20px; /* Adds horizontal padding for better alignment */
+  }
+  
+  /* Section Content Styling */
+  .content {
+    background-color: #f9f9f9; /* Light background to distinguish the content */
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%; /* Centers the content and limits its width */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .content h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #1e90ff; /* Matches the blue theme */
+  }
+  
   }
   
