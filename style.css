@@ -1,21 +1,30 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
     background-color: #f4f4f4;
+    text-align: center; /* Centers all text elements */
   }
   
+  /* Header Styles */
   header {
     background: linear-gradient(to right, #1e90ff, #f39c12);
-    padding: 10px 20px;
+    padding: 20px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center; /* Centers navigation links */
+    gap: 30px;
   }
   
   nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
+    font-size: 1.2em;
     transition: color 0.3s;
   }
   
@@ -23,16 +32,18 @@ body {
     color: #ffd700;
   }
   
+  /* Hero Section */
   .hero {
-    text-align: center;
     padding: 50px;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   .hero img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
+    margin: 20px auto; /* Adds space around the image */
+    display: block; /* Centers the image */
   }
   
   .cta-button {
@@ -42,6 +53,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1.1em;
     transition: background-color 0.3s;
   }
   
@@ -49,27 +61,65 @@ body {
     background-color: #f39c12;
   }
   
+  /* Headings */
+  h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e90ff;
+  }
+  
+  /* About Us - Team Section */
   .team {
     display: flex;
-    justify-content: space-around;
-    margin: 20px;
+    justify-content: center; /* Centers team members */
+    gap: 30px;
+    margin: 20px auto;
+    flex-wrap: wrap; /* Makes it responsive */
   }
   
   .team-member {
     background: #e3e3e3;
     padding: 15px;
     border-radius: 10px;
+    width: 200px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
+  .team-member:hover {
+    background: #ffd700;
+  }
+  
+  /* Product Details */
   .product-details {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    gap: 30px;
     padding: 20px;
+    flex-wrap: wrap; /* Makes it responsive */
   }
   
   .product-image img {
-    max-width: 100%;
+    max-width: 70%;
     border-radius: 10px;
+    display: block; /* Ensures image stays centered */
+    margin: 20px auto;
+  }
+  
+  /* Footer and Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column; /* Stacks navigation links */
+      gap: 15px;
+    }
+  
+    .team, .product-details {
+      flex-direction: column; /* Stacks elements */
+    }
+  
+    .team-member, .product-image img {
+      width: 100%; /* Takes full width */
+    }
   }
   
