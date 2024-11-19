@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Pal - Find Available Parking</title>
+    <style>
+        /* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #1e90ff;
+            padding: 15px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        /* Navbar styling */
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #f0f8ff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #4682b4;
+        }
+
+        /* Main content area */
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Home page image */
+        .home-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        /* Section headings */
+        h2 {
+            color: #1e90ff;
+            margin-bottom: 10px;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Parking Pal</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#product">Product</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="content" id="home">
+        <h2>Welcome to Parking Pal</h2>
+        <img src="./parkinglotpic.jpg" alt="Parking Lot" class="home-image">
+        <p>
+            Parking has become a growing problem in urban areas around the world. 
+            Did you know that drivers in major cities spend an average of 17 hours per year searching for parking spots? 
+            This search time costs drivers up to $345 per year in wasted fuel and contributes significantly to urban congestion and pollution. 
+            <strong>Parking Pal</strong> is here to change that. Our goal is to help you locate available parking spaces in real-time, 
+            reducing your stress, saving you time, and making your city a little greener.
+        </p>
+    </div>
+
+    <div class="content" id="about">
+        <h2>About Us</h2>
+        <p>We are a team dedicated to solving parking challenges with innovative technology. Our mission is to improve urban mobility and enhance your parking experience with reliable, up-to-date information.</p>
+    </div>
+
+    <div class="content" id="product">
+        <h2>Our Product</h2>
+        <p>Parking Pal’s mobile app provides real-time data on available parking spots near you. With an intuitive interface, notifications, and secure payments, Parking Pal takes the stress out of parking.</p>
+    </div>
+
+    <div class="content" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Our customer support team is here to assist you. Whether you're a driver looking for parking or a business looking to partner with us, we’re happy to help.</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Parking Pal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
